@@ -18,7 +18,6 @@ import recyclerview.demo.com.recylerviewdemo.R;
 
 
 /**
- * Created by lenovo on 2017/7/27.
  */
 
 public class PullLoadHeadFootGridRecyclerView extends LinearLayout implements SwipeRefreshLayout.OnRefreshListener {
@@ -101,6 +100,9 @@ public class PullLoadHeadFootGridRecyclerView extends LinearLayout implements Sw
         }
     }
 
+    public RecyclerView getmRecyclerView() {
+        return mRecyclerView;
+    }
 
     public void setLinearLayout() {
         CrashLinearLayoutManager linearLayoutManager = new CrashLinearLayoutManager(mContext);

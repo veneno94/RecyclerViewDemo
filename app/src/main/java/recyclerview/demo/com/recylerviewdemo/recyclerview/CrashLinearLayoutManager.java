@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
 /**
- * Created by lenovo on 2018/1/8.
  */
 
 public class CrashLinearLayoutManager extends LinearLayoutManager {

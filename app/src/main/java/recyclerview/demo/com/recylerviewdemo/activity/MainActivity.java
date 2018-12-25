@@ -3,12 +3,14 @@ package recyclerview.demo.com.recylerviewdemo.activity;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import recyclerview.demo.com.recylerviewdemo.touch.ItemTouchCallback;
 import recyclerview.demo.com.recylerviewdemo.utils.DisplayTool;
 import recyclerview.demo.com.recylerviewdemo.recyclerview.PullLoadHeadFootGridRecyclerView;
 import recyclerview.demo.com.recylerviewdemo.R;
@@ -42,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
         mFindLaunchRv.setAdapter(adapter);
 
         mFindLaunchRv.addHeadView(mHeaderView);
+
+        ItemTouchCallback itemTouchCallback = new ItemTouchCallback<>(adapter, mList, ItemTouchHelper.UP | ItemTouchHelper.DOWN, 0);
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(itemTouchCallback);
+        itemTouchHelper.attachToRecyclerView(mFindLaunchRv.getmRecyclerView());
 
 
         mFindLaunchRv.setOnPullLoadMoreListener(new PullLoadHeadFootGridRecyclerView.PullLoadMoreListener() {

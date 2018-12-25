@@ -12,9 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by hcc on 16/8/7 21:18
- * 100332338@qq.com
- * <p/>
  * RecyclerView添加HeadAndFoot辅助类
  */
 public class HeaderViewGridRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
