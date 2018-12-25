@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.recyclerview;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;

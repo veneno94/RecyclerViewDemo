@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.recyclerview;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;

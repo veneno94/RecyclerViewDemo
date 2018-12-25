@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.recyclerview;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import recyclerview.demo.com.recylerviewdemo.R;
 
 
 /**

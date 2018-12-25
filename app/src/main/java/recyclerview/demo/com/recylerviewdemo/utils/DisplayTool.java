@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

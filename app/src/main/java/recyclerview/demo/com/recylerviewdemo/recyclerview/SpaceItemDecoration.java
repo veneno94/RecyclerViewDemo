@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.recyclerview;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

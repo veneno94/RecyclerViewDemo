@@ -1,4 +1,4 @@
-package recyclerview.demo.com.recylerviewdemo;
+package recyclerview.demo.com.recylerviewdemo.activity;
 
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,12 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import recyclerview.demo.com.recylerviewdemo.utils.DisplayTool;
+import recyclerview.demo.com.recylerviewdemo.recyclerview.PullLoadHeadFootGridRecyclerView;
+import recyclerview.demo.com.recylerviewdemo.R;
+import recyclerview.demo.com.recylerviewdemo.recyclerview.SpaceItemDecoration;
+import recyclerview.demo.com.recylerviewdemo.adapter.StaggeredGridLayoutAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
