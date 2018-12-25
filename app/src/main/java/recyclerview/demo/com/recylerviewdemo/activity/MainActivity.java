@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         mFindLaunchRv.addHeadView(mHeaderView);
 
+        //item的拖拽
         ItemTouchCallback itemTouchCallback = new ItemTouchCallback<>(adapter, mList, ItemTouchHelper.UP | ItemTouchHelper.DOWN, 0);
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(itemTouchCallback);
         itemTouchHelper.attachToRecyclerView(mFindLaunchRv.getmRecyclerView());
