@@ -2,15 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <TextView
-        android:padding="30dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
+        android:id="@+id/head_tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
         android:text="敏，我爱你！ 雷"
         android:textColor="#f00"
         android:textSize="40sp" />
+
+
+    <recyclerview.demo.com.recylerviewdemo.view.UserTitle
+        android:id="@+id/user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
