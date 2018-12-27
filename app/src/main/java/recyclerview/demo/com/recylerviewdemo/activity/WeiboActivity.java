@@ -137,8 +137,10 @@ public class WeiboActivity extends AppCompatActivity {
         headLl.layout(0, -distanceY, 0, 0);
         if (distanceY >= height) {
             userTitle2.setVisibility(View.VISIBLE);
+            headLl.setVisibility(View.GONE);
         } else {
             userTitle2.setVisibility(View.GONE);
+            headLl.setVisibility(View.VISIBLE);
         }
 
     }
