@@ -6,6 +6,7 @@ import android.support.annotation.IntDef;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.Log;
 import android.view.View;
 
 import java.lang.annotation.Retention;
@@ -197,8 +198,7 @@ public class SpaceItemDecoration extends RecyclerView.ItemDecoration {
     }
 
     private void setNGridLayoutSpaceItemDecoration2(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-        int position = parent.getChildAdapterPosition(view) - headItemCount;
-        if (headItemCount != 0 && position == -headItemCount) {
+        if (headItemCount != 0 && parent.getChildAdapterPosition(view) <headItemCount) {
             return;
         }
 
