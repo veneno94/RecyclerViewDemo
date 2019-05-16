@@ -88,10 +88,13 @@ public class HeaderViewGridRecyclerAdapter extends RecyclerView.Adapter<Recycler
                 @Override
                 public int getSpanSize(int position) {
                     int spanSize = 1; //每个griditem 占1份  一行有3个网格item 每个spansize为1  一个item占满则需要返回3
-                    if (position == 0 && mHeaderViews != null && getHeaderCount() > 0) {
+                    int hCount = getHeaderCount();
+                    if (position < hCount) {
                         return gridLayoutManager.getSpanCount();
                     }
-                    if (position == getItemCount() - 1 && getFooterCount() > 0) {
+
+                    int itemCount = mWrappedAdapter.getItemCount();
+                    if (position >= hCount + itemCount) {
                         return gridLayoutManager.getSpanCount();
                     }
                     return spanSize;
