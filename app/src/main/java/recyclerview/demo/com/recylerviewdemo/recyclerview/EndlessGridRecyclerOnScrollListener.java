@@ -24,6 +24,8 @@ public abstract class EndlessGridRecyclerOnScrollListener extends RecyclerView.O
 
         distanceY(recyclerView.computeVerticalScrollOffset());
 
+        if(dy<=0)return;
+
 
         //新的监听滑动到底部
         if (isSlideToBottom(recyclerView) && !mPullLoadHeadFootRecyclerView.isLoadMore() && !mPullLoadHeadFootRecyclerView.isNoMore()) {
