@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onLoadMore() {
+                mPage++;
                 postFind();
             }
         });
@@ -123,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
                                 } else {
 
                                     mList.addAll(data);
-                                    mPage++;
                                     mFindLaunchRv.setPullLoadMoreCompleted();
                                 }
                             } else {
@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
                                     mFindLaunchRv.setNoMore("没有更多数据");
                                 } else {
                                     mList.addAll(data);
-                                    mPage++;
                                     mFindLaunchRv.setPullLoadMoreCompleted();
                                 }
                             }
