@@ -17,9 +17,4 @@
         android:textSize="40sp" />
 
 
-    <recyclerview.demo.com.recylerviewdemo.view.UserTitle
-        android:id="@+id/user_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
 </LinearLayout>
